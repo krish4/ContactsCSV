@@ -5,9 +5,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :last_name
       t.string :company_name
       t.string :address
-      t.string :city
       t.string :county
-      t.string :state
       t.string :zip
       t.string :phone_one
       t.string :phone_two
