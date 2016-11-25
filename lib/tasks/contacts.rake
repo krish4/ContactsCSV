@@ -9,9 +9,9 @@ namespace :contacts do
       t.last_name = contact['last_name']
       t.company_name = contact['company_name']
       t.address = contact['address']
-      t.city = contact['city']
+      
       t.county = contact['county']
-      t.state = contact['state']
+     
       t.zip = contact['zip']
       t.phone_one = contact['phone1']
       t.phone_two = contact['phone2']
