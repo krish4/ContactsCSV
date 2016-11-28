@@ -28,9 +28,9 @@
         <td><%= contact.last_name %></td>
         <td><%= contact.company_name %></td>
         <td><%= contact.address %></td>
-        <td><%= contact.state.city %></td>
+        <td><%= contact.try(:state).try(:city) %></td>
         <td><%= contact.county %></td>
-        <td><%= contact.state.state %></td>
+        <td><%= contact.try(:state).try(:state) %></td>
         <td><%= contact.zip %></td>
         <td><%= contact.phone_one %></td>
         <td><%= contact.phone_two %></td>

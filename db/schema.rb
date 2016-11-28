@@ -25,9 +25,7 @@ ActiveRecord::Schema.define(version: 20161124152257) do
     t.string   "last_name"
     t.string   "company_name"
     t.string   "address"
-    t.string   "city"
     t.string   "county"
-    t.string   "state"
     t.string   "zip"
     t.string   "phone_one"
     t.string   "phone_two"
@@ -39,6 +37,8 @@ ActiveRecord::Schema.define(version: 20161124152257) do
 
   create_table "states", force: :cascade do |t|
     t.string   "state"
+    t.string   "city"
+    t.integer  "contact_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
