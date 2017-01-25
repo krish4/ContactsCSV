@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.background_image {
+    background: url(/assets/images.jpg);
+}
